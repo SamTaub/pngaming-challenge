@@ -1,1 +1,0 @@
-# pngaming-challenge
