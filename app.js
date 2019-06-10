@@ -57,7 +57,7 @@ let currentData;
 const getArrestData = () => {
   //clears data to prevent duplicate information from displaying
   arrestData = [];
-  fetch("http://nflarrest.com/api/v1/team/")
+  fetch("https://nflarrest.com/api/v1/team/")
     //Clear previous results from DOM
     .then(clearRequestResults())
     //Update request status message with loading message
@@ -131,7 +131,7 @@ const sortByConference = conf => {
 const getTeamArrests = team => {
   //Sets the search query to the team passed in on the button click
   let query = team;
-  fetch(`http://nflarrest.com/api/v1/team/topPlayers/${query}`)
+  fetch(`https://nflarrest.com/api/v1/team/topPlayers/${query}`)
     //Clears current results from DOM
     .then(clearRequestResults())
     //Displays loading message so user knows their request is loading and that they should wait
